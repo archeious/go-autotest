@@ -1,0 +1,5 @@
+build-pipeline-plugin:latest
+copyartifact:latest
+parameterized-trigger:latest
+git-parameter:latest
+mask-passwords:latest
