@@ -10,8 +10,9 @@ RUN yum -y install nginx-1.8.0
 RUN rm /etc/nginx/conf.d/default.conf
 RUN rm /etc/nginx/conf.d/example_ssl.conf
 
-ENV cachebust=1434316717
+ENV cachebust=1434316727
 COPY conf/jenkins.conf /etc/nginx/conf.d/jenkins.conf
+COPY conf/ares.conf /etc/nginx/conf.d/ares.conf
 COPY conf/passwords /etc/nginx/passwords
 COPY conf/nginx.conf /etc/nginx/nginx.conf
 
